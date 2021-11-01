@@ -1,10 +1,10 @@
 import React from "react"
-import Navbar from "./components/navbar/Navbar"
-const MainLayout = ({ children }) => {
+import Navbar from "./../../components/navbar/Navbar"
+const MainLayout = ({ props }) => {
   return (
     <div>
       <Navbar />
-      {children}
+      {props}
     </div>
   )
 }

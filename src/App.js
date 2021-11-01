@@ -1,13 +1,14 @@
 import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
-import Navbar from "./components/navbar/Navbar"
-import ProductCard from "./components/product-card/ProductCard"
+import { Container } from "react-bootstrap"
+import ProductView from "./views/ProductView/index"
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <ProductCard />
+      <Container>
+        <ProductView />
+      </Container>
     </>
   )
 }
