@@ -1,18 +1,14 @@
 import "./App.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
+import Navbar from "./components/navbar/Navbar"
+import ProductCard from "./components/product-card/ProductCard"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <ProductCard />
+    </>
   )
 }
-
 export default App
