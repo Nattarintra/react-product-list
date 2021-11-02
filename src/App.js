@@ -1,7 +1,7 @@
 import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from "react-bootstrap"
-import ProductView from "./views/ProductView/index"
+import ProductView from "@views/ProductView/index"
 
 const App = () => {
   return (
