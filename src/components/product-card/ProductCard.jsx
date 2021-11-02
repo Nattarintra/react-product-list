@@ -1,18 +1,21 @@
 import React from "react"
-import { Card, Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
+import { Card } from "react-bootstrap"
 
-const ProductCard = ({ imageUrl = "/images/default.png", title = "Lorem ipsum dolor sit amet." }) => {
+const ProductCard = ({ imageUrl = "/images/default.png", product_name = "Product name", brand_name = "Dyrberg/Kern", actual_price = "55.000", base_price = "55.000" }) => {
   return (
     <>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img src={imageUrl} variant="top" />
-        <Card.Header>{title}</Card.Header>
-        <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
-          <Card.Text>With supporting text below as a natural lead-in to additional content.</Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
+      <Link to="#">
+        <Card style={{ width: "18rem" }}>
+          <Card.Img src={imageUrl} variant="top" />
+          <Card.Body>
+            <Card.Text>{product_name}</Card.Text>
+            <Card.Text>{brand_name}</Card.Text>
+            <Card.Text>{actual_price}</Card.Text>
+            <Card.Text>{base_price}</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
     </>
   )
 }
