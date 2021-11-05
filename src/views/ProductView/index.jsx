@@ -3,14 +3,14 @@ import { Container } from "react-bootstrap"
 
 import MainLayout from "@layout/MainLayout/index"
 import PageWhiteSpace from "@components/white-space/PageWhiteSpace"
-import ProductCard from "@components/product-card/ProductCard"
+import ProductItems from "@views/ProductView/ProductItems"
 
 const ProductView = () => {
   return (
     <MainLayout>
       <PageWhiteSpace>
         <Container>
-          <ProductCard />
+          <ProductItems />
         </Container>
       </PageWhiteSpace>
     </MainLayout>
