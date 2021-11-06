@@ -1,13 +1,21 @@
 import "./App.scss"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
-import Navbar from "./components/navbar/Navbar"
-import ProductCard from "./components/product-card/ProductCard"
+import { Container } from "react-bootstrap"
+import ProductView from "@views/ProductView/index"
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <ProductCard />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Container>
+              <ProductView />
+            </Container>
+          </Route>
+        </Switch>
+      </Router>
     </>
   )
 }
